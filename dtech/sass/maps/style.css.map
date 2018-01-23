@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;;;;;EAKE;AAEF;CACE,WAAW;CACZ","file":"../../../sass/style.css","sourcesContent":["/*\nTheme Name: DTech Theme\nAuthor: Dennis Mikhailov\nAuthor URI: https://github.com/kamrade\nVersion: 1.0\n*/\n\nbody {\n  color: red;\n}\n"]}
