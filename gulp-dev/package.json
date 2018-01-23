@@ -4,6 +4,7 @@
   "description": "Accessible WordPress theme utilizing flex layouts and modern development practices.",
   "main": "index.php",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +28,8 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.0",
     "jshint": "^2.9.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
   }
 }

@@ -5,6 +5,8 @@ Author URI: https://github.com/kamrade
 Version: 1.0
 */
 
+@import '../../gulp-dev/node_modules/bootstrap/scss/bootstrap';
+
 body {
-  color: red;
+  font-family: 'Montserrat', sans-serif;
 }
