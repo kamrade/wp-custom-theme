@@ -61,7 +61,7 @@ gulp.task('watch', function() {
 		proxy: 'localhost:8888',
 		port: 8080
 	});
-	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
+	gulp.watch([root + '**/*.css', root + '**/*.scss', root + '**/*.sass' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);
 	gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
 	gulp.watch(root + '**/*').on('change', browserSync.reload);

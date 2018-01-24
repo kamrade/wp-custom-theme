@@ -5,3 +5,10 @@ function myFolioResources() {
 }
 
 add_action('wp_enqueue_scripts', 'myFolioResources');
+
+// Navigation menus
+
+register_nav_menus(array(
+  'primary' => __( 'Primary Menu' ),
+  'footer'  => __( 'Footer Menu' )
+));

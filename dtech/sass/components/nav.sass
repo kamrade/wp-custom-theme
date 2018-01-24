@@ -1,0 +1,30 @@
+.site-nav
+  ul
+    display: flex
+    flex-wrap: nowrap
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      padding: .5rem
+      margin-left: -0.5rem
+      margin-right: 1.5rem
+      font-size: 12px
+      text-transform: uppercase
+      letter-spacing: 1px
+
+      a
+        +transition($transition-base)
+
+      a:link, a:visited
+        color: $gray-500
+        text-decoration: none
+
+      a:hover
+        color: $gray-900
+
+      &.current-menu-item
+        a:link, a:visited
+          color: $primary
+        a:hover
+          color: darken($primary, 7%)
