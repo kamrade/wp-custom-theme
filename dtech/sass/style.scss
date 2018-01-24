@@ -5,7 +5,10 @@ Author URI: https://github.com/kamrade
 Version: 1.0
 */
 
-@import '../../gulp-dev/node_modules/bootstrap/scss/bootstrap';
+@import "./bootstrap/bootstrap";
+
+@import "./components/header";
+@import "./components/post";
 
 body {
   font-family: 'Montserrat', sans-serif;
