@@ -15,7 +15,12 @@
 
       <div class="site-header__title">
         <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name '); ?></a></h1>
-        <h5><?php bloginfo('description'); ?></h5>
+        <h5><?php bloginfo('description'); ?>.
+          <?php if (is_page('about')) { ?>
+            <span class="text-primary">Conditional about page options</span>
+          <?php } ?>
+        </h5>
+
       </div>
 
       <nav class="site-nav">
