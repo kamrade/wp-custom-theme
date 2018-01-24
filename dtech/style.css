@@ -9046,6 +9046,15 @@ a.text-dark:hover, a.text-dark:focus {
 	font-size: 4rem;
 }
 
+.page-container {
+	margin-bottom: 4rem;
+}
+
+.page-container .info-box {
+	height: 120px;
+	background-color: pink;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
