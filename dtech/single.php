@@ -38,12 +38,7 @@ if( have_posts() ) :
           ?></span>
 
         </p>
-
-        <p>
-          <?php echo get_the_excerpt(); ?>
-          <a href="<?php the_permalink(); ?>"><span class="oi" data-glyph="arrow-right"></span></a>
-        </p>
-
+        <?php the_content(); ?>
       </article>
     </div>
 

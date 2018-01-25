@@ -28,3 +28,15 @@
           color: $primary
         a:hover
           color: darken($primary, 7%)
+
+.site-sub-nav
+  display: flex
+  li
+    list-style: none
+    margin-right: 1rem
+    font-size: 12px
+    &.current_page_item
+      a:link, a:visited
+        color: $primary
+    a:link, a:visited
+      color: $gray-500

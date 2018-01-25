@@ -7,11 +7,14 @@ Version: 1.0
 
 @import "./bootstrap/bootstrap";
 
+@import "./open-iconic.scss";
+
 @import "./components/header";
 @import "./components/footer";
 @import "./components/nav";
 @import "./components/post";
 @import "./components/page";
+@import "./components/archive";
 
 body {
   font-family: 'Montserrat', sans-serif;

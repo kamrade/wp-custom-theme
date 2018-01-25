@@ -7,6 +7,29 @@ get_header();
 
 <?php
 if( have_posts() ) :
+  ?>
+
+  <h2 class="archive-title"><span class="archive-title__bage"><?php
+    if ( is_category() ) {
+      single_cat_title();
+    } elseif ( is_tag() ) {
+      single_tag_title();
+    } elseif ( is_author() ) {
+      the_post();
+      echo 'Author Archives: ' . get_the_author();
+      rewind_posts();
+    } elseif ( is_day() ) {
+      echo 'Dayly archives: ' . get_the_date() ;
+    } elseif ( is_month() ) {
+      echo 'Monthly archives: ' . get_the_date('F Y') ;
+    } elseif ( is_year() ) {
+      echo 'Yearly archives: ' . get_the_date('Y') ;
+    } else {
+      echo 'Archive';
+    }
+  ?></span></h2>
+
+  <?php
   while( have_posts() ) : the_post(); ?>
 
     <div class="post-container">
@@ -38,19 +61,13 @@ if( have_posts() ) :
           ?></span>
 
         </p>
-
-        <p>
-          <?php echo get_the_excerpt(); ?>
-          <a href="<?php the_permalink(); ?>"><span class="oi" data-glyph="arrow-right"></span></a>
-        </p>
-
+        <?php the_excerpt(); ?>
       </article>
     </div>
 
   <?php endwhile;
   else :
     echo '<p>No content found</p>';
-
   endif;
 ?>
 
