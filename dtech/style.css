@@ -9939,7 +9939,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .site-header {
-	padding: 4rem;
+	padding: 4rem 0;
 }
 
 .site-header .site-header__title {
@@ -10030,6 +10030,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 .post-info .post-info__time {
 	color: #ced4da;
+}
+
+.featured-image__container {
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 1rem;
+	border: 2px solid #e9ecef;
+	border-radius: 4px;
+	padding: 1rem;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.09);
+}
+
+.featured-image__container img {
+	max-width: 100%;
+	height: auto;
 }
 
 .single-post__title {

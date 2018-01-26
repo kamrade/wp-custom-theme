@@ -6,12 +6,7 @@ function myFolioResources() {
 
 add_action('wp_enqueue_scripts', 'myFolioResources');
 
-// Navigation menus
 
-register_nav_menus(array(
-  'primary' => __( 'Primary Menu' ),
-  'footer'  => __( 'Footer Menu' )
-));
 
 // It's about child pages
 function get_top_ancestor_id() {
@@ -42,3 +37,21 @@ function custom_excerpt_length() {
 }
 
 add_filter( 'excerpt_length', 'custom_excerpt_length' );
+
+
+function dtech_theme_setup() {
+
+  // Navigation menus
+  register_nav_menus(array(
+    'primary' => __( 'Primary Menu' ),
+    'footer'  => __( 'Footer Menu' )
+  ));
+
+  // add featured images support
+  add_theme_support('post-thumbnails');
+
+  add_image_size('small-thumbnail', 180, 90, true);
+  add_image_size('banner', 1200, 450, array('left', 'top'));
+
+}
+add_action('after_setup_theme', 'dtech_theme_setup');

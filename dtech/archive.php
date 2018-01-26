@@ -61,6 +61,13 @@ if( have_posts() ) :
           ?></span>
 
         </p>
+
+        <div class="featured-image__container">
+          <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail('small-thumbnail'); ?>
+          </a>
+        </div>
+        
         <?php the_excerpt(); ?>
       </article>
     </div>

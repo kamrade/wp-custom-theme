@@ -10,7 +10,7 @@ if( have_posts() ) :
   while( have_posts() ) : the_post(); ?>
 
     <div class="post-container">
-      <article class="post">
+      <article class="post <?php if ( has_post_thumbnail() )  { ?> has-thumbnail <?php } ?>">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <p class="post-info">
           <span class="post-info__date"><?php the_time('F jS, Y'); ?></span>
@@ -38,6 +38,11 @@ if( have_posts() ) :
           ?></span>
 
         </p>
+
+        <div class="featured-image__container">
+          <?php the_post_thumbnail(); ?>
+        </div>
+
         <?php the_content(); ?>
       </article>
     </div>
