@@ -39,9 +39,11 @@ if( have_posts() ) :
 
         </p>
 
-        <div class="featured-image__container">
-          <?php the_post_thumbnail(); ?>
-        </div>
+        <?php if (has_post_thumbnail()) { ?>
+          <div class="featured-image__container">
+            <?php the_post_thumbnail(); ?>
+          </div>
+        <?php } ?>
 
         <?php the_content(); ?>
       </article>

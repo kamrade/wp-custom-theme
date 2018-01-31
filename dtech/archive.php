@@ -34,7 +34,7 @@ if( have_posts() ) :
 
     <div class="post-container">
       <article class="post">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <p class="post-info">
           <span class="post-info__date"><?php the_time('F jS, Y'); ?></span>
           <span class="post-info__separator"> | </span>
@@ -62,12 +62,14 @@ if( have_posts() ) :
 
         </p>
 
-        <div class="featured-image__container">
-          <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail('small-thumbnail'); ?>
-          </a>
-        </div>
-        
+        <?php if (has_post_thumbnail()) { ?>
+          <div class="featured-image__container">
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('small-thumbnail'); ?>
+            </a>
+          </div>
+        <?php } ?>
+
         <?php the_excerpt(); ?>
       </article>
     </div>
