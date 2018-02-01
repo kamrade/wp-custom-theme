@@ -1,6 +1,6 @@
 <div class="post-container">
   <article class="post <?php if ( has_post_thumbnail() )  { ?> has-thumbnail <?php } ?>">
-    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+    <h5><a class="text-primary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
     <p class="post-info">
       <span class="post-info__date"><?php the_time('F jS, Y'); ?></span>
       <span class="post-info__separator"> | </span>

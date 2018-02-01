@@ -49,9 +49,11 @@ function dtech_theme_setup() {
 
   // add featured images support
   add_theme_support('post-thumbnails');
-
   add_image_size('small-thumbnail', 180, 90, true);
   add_image_size('banner', 1200, 450, array('left', 'top'));
+
+  // Add post format support
+  add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 
 }
 add_action('after_setup_theme', 'dtech_theme_setup');

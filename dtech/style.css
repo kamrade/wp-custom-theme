@@ -226,7 +226,7 @@ table {
 caption {
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
-	color: #6c757d;
+	color: #adb5bd;
 	text-align: left;
 	caption-side: bottom;
 }
@@ -2144,7 +2144,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .form-check-input:disabled ~ .form-check-label {
-	color: #6c757d;
+	color: #adb5bd;
 }
 
 .form-check-label {
@@ -6509,7 +6509,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-	color: #6c757d !important;
+	color: #adb5bd !important;
 }
 
 .text-hide {
@@ -7552,7 +7552,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .site-header {
-	padding: 4rem 0;
+	padding: 2rem 0;
 }
 
 .site-header .site-header__title {
@@ -7633,11 +7633,15 @@ a:link, a:visited {
 }
 
 a:link:hover, a:visited:hover {
-	color: #0d4ef3;
+	color: #212529;
 }
 
 .post-container {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
+}
+
+.post {
+	border-bottom: 1px dashed #dee2e6;
 }
 
 .post-info {
@@ -7646,11 +7650,9 @@ a:link:hover, a:visited:hover {
 	line-height: 1rem;
 	color: #6c757d;
 	padding-bottom: .25rem;
-	border-bottom: 1px dashed #e9ecef;
-}
-
-.post-info .post-info__time {
-	color: #ced4da;
+	background-color: #f8f9fa;
+	padding: .25rem;
+	border-radius: 2px;
 }
 
 .featured-image__container {
