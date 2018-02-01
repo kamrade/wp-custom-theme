@@ -55,3 +55,9 @@ function dtech_theme_setup() {
 
 }
 add_action('after_setup_theme', 'dtech_theme_setup');
+
+// CUSTOM EXCERT
+function custom_excerpt_more_link($more){
+  return ' <a href="' . get_the_permalink() . '" rel="nofollow"><span class="small oi" data-glyph="arrow-thick-right"></span></a>';
+}
+add_filter('excerpt_more', 'custom_excerpt_more_link');
