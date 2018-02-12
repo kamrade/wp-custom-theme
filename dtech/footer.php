@@ -1,4 +1,23 @@
 <footer class="site-footer">
+
+  <div class="container footer-widgets">
+    <div class="row">
+      <div class="col-md-3">
+        <?php dynamic_sidebar('footer1'); ?>
+      </div>
+      <div class="col-md-3">
+        <?php dynamic_sidebar('footer2'); ?>
+      </div>
+      <div class="col-md-3">
+        <?php dynamic_sidebar('footer3'); ?>
+      </div>
+      <div class="col-md-3">
+        <?php dynamic_sidebar('footer4'); ?>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container">
     <hr/>
     <div class="row">

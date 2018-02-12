@@ -15,9 +15,9 @@
       ?>
 
     </div>
-    <div class="col-md-3">
-      <?php dynamic_sidebar('sidebar1'); ?>
-    </div>
+
+    <?php get_sidebar(); ?>
+
   </div>
 </div>
 
