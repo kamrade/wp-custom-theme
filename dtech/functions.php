@@ -63,3 +63,13 @@ function custom_excerpt_more_link($more){
   return ' <a href="' . get_the_permalink() . '" rel="nofollow"><span class="small oi" data-glyph="arrow-thick-right"></span></a>';
 }
 add_filter('excerpt_more', 'custom_excerpt_more_link');
+
+function ourWidgetsInit() {
+
+  register_sidebar( array(
+    'name' => 'Sidebar',
+    'id' => 'sidebar1'
+  ) );
+
+}
+add_action('widgets_init', 'ourWidgetsInit');
