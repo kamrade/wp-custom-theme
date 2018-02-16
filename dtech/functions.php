@@ -94,23 +94,5 @@ function ourWidgetsInit() {
     'after_title' => '</h5>'
   ) );
 
-  register_sidebar( array(
-    'name' => 'Footer Area 3',
-    'id' => 'footer3',
-    'before_widget' => '<div class="widget-item">',
-    'after_widget' => '</div>',
-    'before_title' => '<h5 class="widget-title">',
-    'after_title' => '</h5>'
-  ) );
-
-  register_sidebar( array(
-    'name' => 'Footer Area 4',
-    'id' => 'footer4',
-    'before_widget' => '<div class="widget-item">',
-    'after_widget' => '</div>',
-    'before_title' => '<h5 class="widget-title">',
-    'after_title' => '</h5>'
-  ) );
-
 }
 add_action('widgets_init', 'ourWidgetsInit');
